@@ -1,0 +1,13 @@
+{
+  "name": "@credit-orchestrator/debt-optimizer",
+  "version": "1.0.0",
+  "main": "dist/optimizer.js",
+  "types": "dist/optimizer.d.ts",
+  "dependencies": {
+    "@credit-orchestrator/fcra-rules-engine": "*",
+    "ethers": "^6.13.0"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}
