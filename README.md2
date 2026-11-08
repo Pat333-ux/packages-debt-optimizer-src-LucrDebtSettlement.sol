@@ -1,0 +1,15 @@
+# LUCR Debt Settlement Engine
+
+> Decentralized LUCR token escrow and fiat off-ramp bridge that locks member or treasury allocations on-chain for targeted creditor tradeline paydowns, triggering automated ACH disbursements and releasing or refunding tokens upon settlement confirmation.
+
+## Architecture
+
+```text
+lucr-debt-settlement/
+├── apps/
+│   └── api-gateway/         # Express server running the settlement watcher & off-ramp bridge
+├── packages/
+│   └── debt-optimizer/      # Solidity contract (LucrDebtSettlement.sol) & ethers.js event watcher
+├── .env.example
+├── package.json
+└── tsconfig.json
