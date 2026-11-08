@@ -1,0 +1,23 @@
+{
+  "name": "lucr-debt-settlement",
+  "version": "1.0.0",
+  "description": "Decentralized LUCR token escrow and fiat off-ramp bridge that locks member or treasury allocations on-chain for targeted creditor tradeline paydowns, triggering automated ACH disbursements and releasing or refunding tokens upon settlement confirmation.",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "tsc --build",
+    "start": "npm --workspace=apps/api-gateway run start"
+  },
+  "dependencies": {
+    "ethers": "^6.13.0",
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
