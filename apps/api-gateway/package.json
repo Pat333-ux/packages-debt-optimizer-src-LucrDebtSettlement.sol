@@ -1,0 +1,16 @@
+{
+  "name": "@lucr/settlement-gateway",
+  "version": "1.0.0",
+  "main": "dist/server.js",
+  "dependencies": {
+    "@lucr/debt-settlement": "*",
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js"
+  }
+}
